@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <div id="main">
+    <div class="title-header">
+      <h1>MENTAL ARITHMETIC TRAINING</h1>
+    </div>
+    <div id="display-area">
+      <h2>Select Mode</h2>
+      <div class="calctype-btns">
+        <button type="button" onclick="startGame('addition');">たし算</button>
+        <button type="button" onclick="startGame('subtraction');">ひき算</button>
+        <button type="button" onclick="startGame('multiplication');">かけ算</button>
+      </div>
+      <h2>Option</h2>
+      <div id="option">
+        <div>
+          問題数 : 
+          <input type="number" id="max-question" min="1" max="100" placeholder="15" onkeypress="allowNumOnly(event);">
+          <p id="max-question-err-text"></p>
+        </div>
+        <div>
+          最大桁数 : 
+          <input type="number" id="max-digit" min="1" max="10" placeholder="3" onkeypress="allowNumOnly(event);">
+          <p id="max-digit-err-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
