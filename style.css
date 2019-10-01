@@ -35,13 +35,18 @@ body {
   right: 0;
   margin: auto;
 }
+.title-header > h1 > a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0;
+}
 
 #display-area {
   text-align: center;
   width: 50%;
   background-color: #ffffff;
   position: absolute;
-  padding: 3rem 5rem 10rem 5rem;
+  padding: 3rem 3rem 10rem 3rem;
   top: 9rem;
   left: 0;
   right: 0;
@@ -71,33 +76,48 @@ body {
   margin-bottom: 7rem;
 }
 .calctype-btns button {
+  background-color: #ffffff;
   color: #DB4A02;
   border: solid 5px #DB4A02;
 }
 .calctype-btns button:hover {
-  background: #DB4A02;
+  background-color: #DB4A02;
   color: #ffffff;
 }
 
 
 /* options */
-#option > div {
-  font-size: 20px;
+#options {
+  margin-bottom: 5rem;
+}
+#options > div {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 23px;
   color: #DB4A02;
   font-weight: bold;
-  margin: 3rem;
+  margin: 2rem;
 }
-#option input {
+#options input {
   border: solid 3px #DB4A02;
   font-size: 20px;
-  border-radius: 0.8rem;
+  border-radius: 0.3rem;
   width: 5rem;
   height: 2rem;
   text-align: center;
 }
-#option p {
-  font-size: 15px;
+#options > div > p {
+  font-size: 13px;
   color: #B52A2D;
+}
+
+#how-to-use-text {
+  max-width: 65%;
+  margin: auto;
+}
+#how-to-use-text > p {
+  text-align: left;
+  color: #2a2a2a;
 }
 
 
@@ -119,6 +139,15 @@ body {
 #question-area #err-text {
   color: #B52A2D;
 }
+#question-area input[type="number"]::-webkit-outer-spin-button,
+#question-area input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#question-area input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 
 /* result画面 */
 #result-area {
@@ -157,19 +186,21 @@ body {
 }
 
 #retry-btn {
+  background-color: #ffffff;
   color: #65A2D1;
   border: solid 5px #65A2D1;
 }
 #retry-btn:hover {
-  background: #65A2D1;
+  background-color: #65A2D1;
   color: #ffffff;
 }
 
 #back-to-top-button {
+  background-color: #ffffff;
   color: #98A5AC;
   border: solid 5px #98A5AC;
 }
 #back-to-top-button:hover {
-  background: #98A5AC;
+  background-color: #98A5AC;
   color: #ffffff;
 }

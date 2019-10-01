@@ -40,13 +40,13 @@ const startGame = (type) => {
 
     if (type === 'addition') {
       calcOperator = '+';
-      maxDigit = maxDigit ? maxDigit : 3;
+      maxDigit = maxDigit ? maxDigit : 2;
     } else if (type === 'subtraction') {
       calcOperator = '-';
-      maxDigit = maxDigit ? maxDigit : 3;
+      maxDigit = maxDigit ? maxDigit : 2;
     } else if (type === 'multiplication') {
       calcOperator = '×';
-      maxDigit = maxDigit ? maxDigit : 2;
+      maxDigit = maxDigit ? maxDigit : 1;
     }
 
     // maxDigitの計算
@@ -75,6 +75,7 @@ const startGame = (type) => {
   // 解答欄の設置
   elAnsBox = document.createElement('input');
   elAnsBox.id = 'ans-box';
+  elAnsBox.autofocus = true;
   elAnsBox.setAttribute('type', 'number');
   elAnsBox.setAttribute('pattern', '\d*');
   elAnsBox.setAttribute('oncopy', 'return false;');

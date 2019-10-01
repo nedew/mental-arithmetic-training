@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>MENTAL ARITHMETIC TRAINING</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
@@ -11,17 +11,17 @@
 <body>
   <div id="main">
     <div class="title-header">
-      <h1>MENTAL ARITHMETIC TRAINING</h1>
+      <h1><a href="index.html">MENTAL ARITHMETIC TRAINING</a></h1>
     </div>
     <div id="display-area">
       <h2>Select Mode</h2>
       <div class="calctype-btns">
-        <button type="button" onclick="startGame('addition');">たし算</button>
-        <button type="button" onclick="startGame('subtraction');">ひき算</button>
-        <button type="button" onclick="startGame('multiplication');">かけ算</button>
+        <button type="button" class="test" onclick="startGame('addition');">たし算</button>   
+        <button type="button" class="test" onclick="startGame('subtraction');">ひき算</button>
+        <button type="button" class="test" onclick="startGame('multiplication');">かけ算</button>
       </div>
       <h2>Option</h2>
-      <div id="option">
+      <div id="options">
         <div>
           問題数 : 
           <input type="number" id="max-question" min="1" max="100" placeholder="15" onkeypress="allowNumOnly(event);">
@@ -29,9 +29,18 @@
         </div>
         <div>
           最大桁数 : 
-          <input type="number" id="max-digit" min="1" max="10" placeholder="3" onkeypress="allowNumOnly(event);">
+          <input type="number" id="max-digit" min="1" max="10" placeholder="2" onkeypress="allowNumOnly(event);">
           <p id="max-digit-err-text"></p>
         </div>
+      </div>
+      <h2>How to use</h2>
+      <div id="how-to-use-text">
+        <p>PCからのプレイ推奨です。</p>
+        <p>たし算、ひき算、かけ算のいずれかのボタンをクリックすると開始します。</p>
+        <p>
+          Optionから、問題の数と、問題に出てくる数字の桁の最大値を設定できます。<br>
+          Optionを何も設定しないで開始すると、問題数が15問、最大桁数が2桁(かけ算は1桁)の状態でスタートします。
+        </p>
       </div>
     </div>
   </div>
